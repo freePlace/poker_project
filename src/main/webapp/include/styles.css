@@ -1,0 +1,224 @@
+body { padding: 15px; background-color: #FFFFFF; color: #000000;}
+a { color: #003366}
+h1 {font-size: 11pt; font-family : Verdana; color: #000000}
+a.billboard { color: #FCF92B}
+a.sitemap { text-decoration: none; color: #ffffff}
+a.none { text-decoration: none;}
+a.black { color: #000000;}
+a.noneblack { text-decoration: none; color: #000000;}
+a.noneblackbold { text-decoration: none; color: #000000; font-weight: bold;}
+a.nonegray { text-decoration: none; color: #999999;}
+a.nonegray_disabled { text-decoration: none; color: #999999; cursor : default; }
+a.nonewhite { text-decoration: none; color: #ffffff;}
+a.bold { font-weight: bold; text-decoration: none; cursor : hand ;}
+a.boldunderline { font-weight: bold; }
+td { font-size: 8pt; font-family : Verdana; color: #000000}
+tt { font-weight: bold}
+p { font-size : 9pt; font-family : Verdana; color: #000000}
+pre { font-size : 9pt; font-family : courier; color: #000000}
+pre.small { font-size : 6pt; font-family : courier; color: #000000}
+table { border-collapse:collapse; border-spacing: 0; }
+th  {color: #000000; background-color: #cccccc}
+
+.infoLevel1 { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #336699}
+.infoLevel1a { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #79A0C7}
+.infoLevel1b { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #0B3E70}
+.infoLevel1c { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #999966}
+.infoLevel1d { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #5663B8}
+
+.infoLevel2 { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #5663B8}
+.infoLevel2a { color: #FFFFFF; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: #B84848}
+.infoLevel3 { font-size: 10px ; color: #660000; background-color: #FFFFFF }
+.infoLevel4 { color: #000000; text-decoration: none; font-size: 9pt; background-color: #E5E5E5}
+.infoLevel4Bold { color: #000000; text-decoration: none; font-weight: bold; font-size: 9pt; background-color: #E5E5E5}
+.infoLevel3alt { color: #003366; text-decoration: none; font-size: 10px; background-color: #CCCC99; clip:  rect( ); font-weight: normal}
+.lightBlue {  text-decoration: none; font-size: 9pt; background-color: lightblue}
+.lightBlueBold { color: #000000; text-decoration: none; font-weight: bold ; font-size: 9pt; background-color: lightblue}
+
+.date { color: #666666; font-size: 10px; font-weight: normal}
+.dateWhite { color: #FFFFFF; font-family : Verdana,Ariel,Helvetica; font-size: 10px; font-weight: bold}
+.dateBlack { color: #000000; font-family : Verdana,Ariel,Helvetica; font-size: 10px; font-weight: bold}
+
+.fixedDarkBlue { color: #000066; font-family : Courier; font-size: 10pt;}
+.fixedSmallDarkBlue { color: #000066; font-family : Courier; font-size: 6pt;}
+.fixedSmallDarkBlueBold { color: #000066; font-family : Courier; font-size: 6pt; font-weight: bold}
+.fixedDarkBlueBold { color: #000066; font-family : Courier; font-size: 10pt; font-weight: bold}
+.fixedBlack { color: #000000; font-family : Courier; font-size: 10pt;}
+.fixedBlackBold { color: #000000; font-family : Courier; font-size: 10pt; font-weight: bold}
+
+.txtTinyWhite { font-family : Verdana,Ariel,Helvetica; font-size: 5pt ; color: #ffffff}
+.txtTinyBlue { font-family : Verdana,Ariel,Helvetica; font-size: 5pt ; color: #9BC3EB}
+.txtTinyBlack { font-family : Verdana,Ariel,Helvetica; font-size: 5pt ; color: #000000}
+.txtTinyRed { font-family : Verdana,Ariel,Helvetica; font-size: 5pt ; color: #ff0000}
+.txtTinyGreen { font-family : Verdana,Ariel,Helvetica; font-size: 5pt ; color: #00ff00}
+.txtTinyBlue { font-family : Verdana,Ariel,Helvetica; font-size: 5pt ; color: #0000ff}
+
+.txtXXSmallWhite { font-size: 5pt ; color: #ffffff; font-family : Verdana;}
+.txtXXSmall {  font-size: 5pt}
+.txtXXSmallBlueDark { font-size: 5pt; color: #000066; font-family : Verdana,Ariel,Helvetica;}
+.txtXXSmallBlueDarkBold { font-size: 5pt; color: #000066; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXXSmallGrey { font-size: 5pt; color: #666666; font-family : Verdana,Ariel,Helvetica;}
+.txtXXSmallWhiteBold { font-size: 5pt ; color: #ffffff; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXXSmallBlack { font-size: 5pt ; color: #000000; font-family : Verdana,Ariel,Helvetica;}
+.txtXXSmallBlackBold { font-size: 5pt ; color: #000000; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXXSmallBlue { font-size: 5pt ; color: #336699; font-family : Verdana,Ariel,Helvetica;}
+.txtXXSmallBlueBold { font-size: 5pt ; color: #336699; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXXSmallRed { font-size: 5pt ; color: #990000}
+.txtXXSmallRedBold { font-size: 5pt ; color: #990000; font-weight: bold}
+
+.txtXSmallWhite { font-size: 6pt ; color: #ffffff; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallYellow { font-size: 6pt ; color: #ffff00; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallYellowBold { font-size: 6pt ; color: #ffff00; font-weight: bold; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmall {  font-size: 6pt}
+.txtXSmallBlueDark { font-size: 6pt; color: #000066; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallBlueDarkBold { font-size: 6pt; color: #000066; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXSmallGrey { font-size: 6pt; color: #666666; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallWhiteBold { font-size: 6pt ; color: #ffffff; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXSmallBlack { font-size: 6pt ; color: #000000; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallBlackBold { font-size: 6pt ; color: #000000; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXSmallBlue { font-size: 6pt ; color: #336699; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallBlueBold { font-size: 6pt ; color: #336699; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtXSmallRed { font-size: 6pt ; color: #990000; font-family : Verdana,Ariel,Helvetica;}
+.txtXSmallRedBold { font-size: 6pt ; color: #990000; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+
+.txtSmallWhite { font-size: 7pt; color: #ffffff}
+.txtSmallWhiteBold { font-size: 7pt; color: #ffffff; font-weight: bold;}
+.txtSmall {  font-size: 7pt;}
+.txtSmallBlack { font-size: 7pt; color: #000000}
+.txtSmallBlackBold { font-size: 7pt; color: #000000; font-weight: bold}
+.txtSmallBlueDark { font-size: 7pt; color: #000066; font-family : Verdana,Ariel,Helvetica}
+.txtSmallBlueDarkBold { font-size: 7pt; color: #000066; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtSmallBlue { font-size: 7pt; color: #336699}
+.txtSmallRed { font-size: 7pt; color: #990000}
+.txtSmallRedBold { font-size: 7pt ; color: #990000;  font-weight: bold;}
+
+.txtSmallBlack1 { font-size: 8pt; color: #000000}
+.txtSmallBlackBold1 { font-size: 8pt; color: #000000; font-weight: bold}
+
+.txtMedWhite { font-size: 8pt; font-family: Verdana,Ariel,Helvetica; color: #ffffff}
+.txtMedWhiteBold { font-size: 8pt; font-family: Verdana,Ariel,Helvetica; font-weight: bold; color: #ffffff; }
+.txtMed {  font-size: 8pt;}
+.txtMedBlueDark { font-size: 8pt; color: #000066; font-family : Verdana,Ariel,Helvetica;}
+.txtMedBlueDarkBold { font-size: 8pt; color: #000066; font-family : Verdana,Ariel,Helvetica; font-weight: bold ;}
+.txtMedBlueUltraBold { font-size: 8pt; font-family: Verdana,Ariel,Helvetica; font-weight: bold; color: #0099CC; }
+.txtMedBlue { font-size: 8pt; font-weight: normal; color: #000066; font-family: Verdana,Ariel,Helvetica; }
+.txtMedBlueBold { font-size: 8pt; font-weight: bold; color: #000066; font-family: Verdana,Ariel,Helvetica; }
+.txtMedBlack { font-size: 8pt; color: #000000; font-family: Verdana,Ariel,Helvetica; }
+.txtMedBlackBold { font-size: 8pt; color: #000000; font-family : Verdana,Ariel,Helvetica; font-weight: bold; }
+.txtMedLightGrey { font-size: 8pt; font-weight: normal; color: #999999; font-family: Verdana,Ariel,Helvetica; }
+.txtMedLightGreyBold { font-size: 8pt; font-weight: bold; color: #BBBBBB; font-family: Verdana,Ariel,Helvetica; }
+.txtMedYellow { font-size: 8pt; color: #FFFF00; font-family: Verdana,Ariel,Helvetica; }
+.txtMedYellowBold { font-size: 8pt; color: #FFFF00; font-family : Verdana,Ariel,Helvetica; font-weight: bold; }
+.txtMedRed { font-size: 8pt ; color: #990000; font-family : Verdana,Ariel,Helvetica;}
+.txtMedRedBold { font-size: 8pt ; color: #990000;  font-family : Verdana,Ariel,Helvetica; font-weight: bold;}
+
+.txtLargeWhite { font-size: 10pt ; color: #ffffff; font-family : Verdana,Ariel,Helvetica;}
+.txtLargeWhiteBold { font-size: 10pt ; color: #ffffff; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtLargeBlack { font-size: 10pt ; color: #000000; font-family : Verdana,Ariel,Helvetica;}
+.txtLargeBlackBold { font-size: 10pt ; color: #000000; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtLargeRed { font-size: 10pt ; color: #ff0000; font-family : Verdana,Ariel,Helvetica;}
+.txtLargeRedBold { font-size: 10pt ; color: #AA0000; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtLargeGreen { font-size: 10pt ; color: #00ff00; font-family : Verdana,Ariel,Helvetica;}
+.txtLargeGreenBold { font-size: 10pt ; color: #00ff00; font-family : Verdana,Ariel,Helvetica; font-weight: bold}
+.txtLargeBlue { font-size: 10pt ; color: #0000ff; font-family : Verdana,Ariel,Helvetica;}
+.txtLargeRed { font-size: 10pt ; color: #990000; font-family : Verdana,Ariel,Helvetica;}
+.txtLargeRedBold { font-size: 10pt ; color: #990000; font-family : Verdana,Ariel,Helvetica; font-weight: bold;}
+
+.bgGrey { background-color: #cccccc}
+.bgLightGrey { background-color: #eeeeee}
+.bgGreen { background-color: #00DD00}
+.bgRed { background-color: #DD0000}
+.bgBlack {  background-color: #000000}
+.bgWhite {  background-color: #FFFFFF}
+.bgBlueLight { background-color: #6699CC}
+.bgBlueMed { background-color: #003366}
+.bgBlueDark { background-color: #000066}
+.bgKhakiDark { background-color: #999966}
+.bgKhakiLight { background-color: #CCCC99}
+.bgYellowLight { color: #000000; background-color: #F0F2F6}
+.bgYellowLight.ORIG { color: #000000; background-color: #FFFFCC}
+.bgYellowLight1 { color: #000000; background-color: #fff5be}
+.bgYellowLight2 {color: #000000; background-color: #BACAE0}
+.bgYellowLight2.ORIG {color: #000000; background-color: #E5E5BC}
+.bgYellowLight3 {color: #000000; background-color: #ffffee}
+.bgTopYellow1 {background-color: #CCCC99}
+.bgTopYellow {background-color: #FCBA47}
+.bgLightPaleGreen {background-color: #efffea}
+.bgLightPaleGreen1 {background-color: #EBFAEB}
+.bgDarkPaleGreen {background-color: #80ab63}
+.bgLightPaleRed {background-color: #ffeaeb}
+.bgRedLight { color: #000000;	background-color: #ffe1e1 }
+
+.lineBlueDark { font-size: 1px; background-color: #003366; color: #003366 }
+.lineGreenDark { font-size: 1px; background-color: #275717; color: #275717 }
+.lineDarkPaleGreen {font-size: 1px; background-color: #80ab63}
+.lineBlueUltra { font-size: 1px; background-color: #00CCFF; color: #00CCFF }
+.lineKhakiDark { font-size: 1px; background-color: #999966; color: #999966} 
+.lineBlack { font-size: 1px; background-color: #000000; color: #000000 }
+.lineWhite { font-size: 1px; background-color: #FFFFFF; color: #FFFFFF }
+.lineBlueMed { font-size: 1px; background-color: #336699; color: #336699 }
+.lineBlueLight { font-size: 1px; background-color: #6699CC; color: #6699CC }
+.lineKhakiLight { font-size: 1px; background-color: #CCCC99; color: #CCCC99 }
+.lineGrey {  font-size: 1px; color: #CCCCCC; background-color: #CCCCCC}
+.lineKhakiLight { font-size: 1px; background-color: #CCCC99; color: #CCCC99 }
+.lineYellowLight { font-size: 1px; background-color: #FFFFCC; color: #FFFFCC }
+
+.hdrBlue {  font-size: 9pt; color: #336699}
+.hdrRed { font-size: 9pt; color: #990000}
+.hdrBlack { font-size: 9pt; color: #000000}
+
+
+.buttonUp {	color: #ffffff; text-decoration: none; font-size: 7pt; 
+									background-color: #919FC9; clip: rect( ); font-weight: bold; 
+									font-family : Verdana,Ariel,Helvetica;
+									border-style: solid; 
+									border-width: 1;
+									border-color: #C8D1E8 #2B3D70 #2B3D70 #C8D1E8;
+									padding-left: 1px;
+									padding-top: 1px;
+								}
+
+.buttonDown {	color: #ffffff; text-decoration: none; font-size: 7pt; 
+									background-color: #475A91; clip: rect( ); font-weight: bold; 
+									font-family : Verdana,Ariel,Helvetica;
+									border-style: solid; 
+									border-width: 1;
+									border-color: #2B3D70 #C8D1E8 #C8D1E8 #2B3D70;		
+									padding-left: 1px;
+									padding-top: 1px;
+								}
+
+a.buttonOver	 {	color: #ffffff; text-decoration: none; font-size: 7pt; 
+									clip: rect( ); font-weight: bold; 
+									font-family : Verdana,Ariel,Helvetica;
+									width: 100%;
+									cursor : hand ;
+								}
+
+a.buttonOver:hover {	color: #000000; text-decoration: none; font-size: 7pt; 
+									background-color: #E1E6F5; clip: rect( ); font-weight: bold; 
+									font-family : Verdana,Ariel,Helvetica;
+									width: 100%;
+									cursor : hand ;
+								}
+
+a.menuitem { text-decoration: none; 
+									color: #000000; 
+									padding: 2px;
+									border-style: solid; 
+									border-width: 1;
+									border-color: #F0F2F6;
+									width: 100%
+						}
+
+a.menuitem:hover { color: #FFFFFF; 
+									background-color: #6C8EDA; 
+									padding: 2px;
+									font-weight: bold; 
+									text-decoration: none; 
+									border-style: outset; 
+									border-width: 1;
+									border-color: black;
+									width: 100%
+								}
+
