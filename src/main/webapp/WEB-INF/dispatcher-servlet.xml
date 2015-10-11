@@ -27,14 +27,16 @@
 	<!-- Define the MongoTemplate which handles connectivity with MongoDB -->
 	<beans:bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
 		<beans:constructor-arg name="mongo" ref="mongo" />
-		<beans:constructor-arg name="databaseName" value="gcdr" />
+		<beans:constructor-arg name="databaseName" value="test" />
 	</beans:bean>
 	
 	<!-- Factory bean that creates the MongoDB instance -->
 	<beans:bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">
-    	<beans:property name="host" value="localhost"/>
+    	<beans:property name="host" value="127.0.0.1"/>
+        <beans:property name="port" value="27017"/>
     </beans:bean>
-	
+
+	<context:annotation-config />
 	<!-- Use this post processor to translate any MongoExceptions thrown in @Repository annotated classes -->
 	<beans:bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
    
