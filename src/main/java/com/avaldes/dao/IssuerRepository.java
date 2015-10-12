@@ -2,8 +2,10 @@ package com.avaldes.dao;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
+import com.avaldes.util.UtilMongoDB;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
@@ -12,32 +14,32 @@ import org.springframework.stereotype.Repository;
 import com.avaldes.model.Issuer;
 
 @Repository
-public class IssuerRepository {
+public class IssuerRepository{
 	public static final String COLLECTION_NAME = "issuer";
-	
-	@Autowired
-    private MongoTemplate mongoTemplate;
+
+    ApplicationContext ctx = new AnnotationConfigApplicationContext(UtilMongoDB.class);
+    MongoOperations mongoOperation = (MongoOperations)ctx.getBean("mongoTemplate");
 	
 	public void addIssuer(Issuer issuer) {
-        if (!mongoTemplate.collectionExists(Issuer.class)) {
-            mongoTemplate.createCollection(Issuer.class);
-        }       
-        mongoTemplate.insert(issuer, COLLECTION_NAME);
+        if (!mongoOperation.collectionExists(Issuer.class)) {
+            mongoOperation.createCollection(Issuer.class);
+        }
+        mongoOperation.insert(issuer, COLLECTION_NAME);
     }
 	
 	public Issuer getIssuerByTicker(String ticker) {
-	    return mongoTemplate.findOne(
+	    return mongoOperation.findOne(
 	    		Query.query(Criteria.where("ticker").is(ticker)), Issuer.class, COLLECTION_NAME);
 	}
 	
 	public List<Issuer> getAllIssuers() {
-        return mongoTemplate.findAll(Issuer.class, COLLECTION_NAME);
+        return mongoOperation.findAll(Issuer.class, COLLECTION_NAME);
     }
      
     public Issuer deleteIssuer(String ticker) {
-    	Issuer issuer = mongoTemplate.findOne(
+    	Issuer issuer = mongoOperation.findOne(
 	    		Query.query(Criteria.where("ticker").is(ticker)), Issuer.class, COLLECTION_NAME);
-        mongoTemplate.remove(issuer, COLLECTION_NAME);
+        mongoOperation.remove(issuer, COLLECTION_NAME);
         
         return issuer;
     }
@@ -50,9 +52,10 @@ public class IssuerRepository {
 		update.set("issuerName", issuer.getIssuerName());
 		update.set("issuerType", issuer.getIssuerType());
 		update.set("country", issuer.getCountry());
- 
-        mongoTemplate.updateFirst(query, update, Issuer.class);
+
+        mongoOperation.updateFirst(query, update, Issuer.class);
         
         return issuer;
     }
+
 }
